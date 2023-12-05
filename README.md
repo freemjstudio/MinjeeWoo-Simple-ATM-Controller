@@ -1,5 +1,6 @@
 # MinjeeWoo-Simple-ATM-Controller
-Simple ATM Controller
+
+This is a simple ATM controller service that user can deposit, withdraw and check the balance. 
 
 ## How to Start
 - Make sure that you have C++ compiler on your environment. 
