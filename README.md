@@ -3,6 +3,22 @@
 
 This is a simple ATM controller service that user can deposit, withdraw and check the balance. 
 
+```
+     _  _____ __  __    ____            _             _ _           
+    / \|_   _|  \/  |  / ___|___  _ __ | |_ _ __ ___ | | | ___ _ __ 
+   / _ \ | | | |\/| | | |   / _ \| '_ \| __| '__/ _ \| | |/ _ \ '__|
+  / ___ \| | | |  | | | |__| (_) | | | | |_| | | (_) | | |  __/ |   
+ /_/   \_\_| |_|  |_|  \____\___/|_| |_|\__|_|  \___/|_|_|\___|_|   
+                                                                    
+
+Welcome to ATM Service!
+        1. Create Account 
+        2. Deposit 
+        3. Withdraw 
+        9. Admin Page
+        0. Exit
+```
+
 ## How to Start
 - Make sure that you have C++ compiler on your environment. 
 - Clone the remote repository. 
