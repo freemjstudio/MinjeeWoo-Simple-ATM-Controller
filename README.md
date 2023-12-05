@@ -69,6 +69,9 @@ You can quit the ATM Service. Thank you for using our service.
 
 ## TestCode
 
+- Test User that is already created : ("bear", 1234)
+- You can create test user following the test case below. 
+
 A. User
 a. create a new user 
 ```
