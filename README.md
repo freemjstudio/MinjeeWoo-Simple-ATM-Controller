@@ -47,10 +47,18 @@ menu = 1
 - user input
 name = "test"
 password = 1234
+balance = 1000
 
 b. deposit 
+enter the amount to deposit
+- user input 
+100
 
 c. withdraw
+enter the amount to deposit
+- user input 
+300
+
 
 B. Admin 
 - user input 
