@@ -23,8 +23,8 @@ class Account {
         void getInfo();
         void createAccount();
         bool login(char*, int);
-        void withdrawal(char*);
-        void deposit(char* );
+        void withdrawal(char*, int);
+        void deposit(char*, int);
         void showBalance();
 };
 
@@ -137,7 +137,7 @@ bool Account::login(char* userID, int userPW){
     return false;
 }
 
-void Account::deposit(char* userName){
+void Account::deposit(char* userName, int userPW){
     Account account;
     fstream file, newFile;
 
@@ -150,6 +150,13 @@ void Account::deposit(char* userName){
 
         // compare string userName with account name
         if (!strcmp(account.getName(), userName)){
+            if (userPW != account.getPassword()){
+                cout << "Login Failed!\n";
+                break;
+            } else {
+                cout << "Login Succeeded!\n";
+            }
+
             int amount;
             cout << "Enter the amount to deposit:\n";
             cin >> amount;
@@ -168,7 +175,7 @@ void Account::deposit(char* userName){
     rename("newData.txt", "data.txt");
 }
 
-void Account::withdrawal(char* userName){
+void Account::withdrawal(char* userName, int userPW){
     Account account;
     fstream file, newFile;
 
@@ -180,6 +187,13 @@ void Account::withdrawal(char* userName){
     while (!file.eof()){
         // compare string userName with account name
         if (!strcmp(account.getName(), userName)){
+            if (userPW != account.getPassword()) {
+                cout << "Login Failed!\n";
+                break;
+            } else {
+                cout << "Login Succeeded!\n";
+            }
+
             int amount;
             cout << "Enter the amount to withdraw:\n";
             cin >> amount;
@@ -235,13 +249,7 @@ void atmService() {
         cin >> userPW;
         cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
 
-        // account.deposit(userID);
-        if (account.login(userID, userPW) == true){
-            account.deposit(userID);
-            
-        } else {
-            cout << "Login Failed!\n"; 
-        };
+        account.deposit(userID, userPW);
         break;
     case 3:
         cout << "<Withdraw>\n";
@@ -251,13 +259,7 @@ void atmService() {
         cout << "Enter Password:\n";
         cin >> userPW;
         cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
-        // account.withdrawal(userID);
-        if (account.login(userID, userPW) == true){
-            account.withdrawal(userID);
-            
-        } else {
-            cout << "Login Failed!\n"; 
-        };
+        account.withdrawal(userID, userPW);
         break;
     case 9:
         cout << "<Admin Page>\n";
