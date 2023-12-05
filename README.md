@@ -71,28 +71,77 @@ You can quit the ATM Service. Thank you for using our service.
 
 A. User
 a. create a new user 
-- user input  
-menu = 1  
+```
+1
+<Create Account>
+Enter name:test
+Enter PIN number: 
+1234
+Enter initial balance: 
+500
+```
+
 
 - user input  
 name = "test"  
 password = 1234  
-balance = 1000  
+balance = 500  
 
 b. deposit   
 enter the amount to deposit   
+
+```
+2
+<Deposit>
+Enter Name:
+test
+Enter Password:
+1234
+Welcome ,test
+Enter the amount to deposit:
+100
+Total:600
+```
+
 - user input   
 menu = 2
+name = "test"
+password = 1234
 amount = 100  
 
 c. withdraw   
-enter the amount to deposit   
+
+
+```
+3
+<Withdraw>
+Enter Name:
+test
+Enter Password:
+1234
+Welcome ,test
+Enter the amount to withdraw:
+100
+Total:500
+```
 - user input    
 menu = 3  
-amount = 300   
+name = "test"
+password = 1234
+amount = 100   
 
 
 B. Admin   
+```
+9
+<Admin Page>
+ADMIN USER ID:
+admin
+ADMIN PASSWORD:
+1234
+Welcome to Admin Page!
+Login Successfully!
+```
 - user input   
 menu = 9  
 name = "admin"  
@@ -100,3 +149,27 @@ password = "1234"
 
 To view all of the users,   
 menu = 1  
+
+```
+Admin Page Menu
+1. See All Users
+Enter Menu: 
+1
+Name:test
+Total:500
+```
+
+C.Exit
+```
+Welcome to ATM Service!
+        1. Create Account 
+        2. Deposit 
+        3. Withdraw 
+        9. Admin Page
+        0. Exit
+0
+Thank You for using our ATM Service!
+```
+
+- user input
+menu = 0
