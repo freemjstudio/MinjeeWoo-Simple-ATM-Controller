@@ -43,29 +43,29 @@ You can quit the ATM Service. Thank you for using our service.
 
 A. User
 a. create a new user 
-- user input
-menu = 1
+- user input  
+menu = 1  
 
-- user input
-name = "test"
-password = 1234
-balance = 1000
+- user input  
+name = "test"  
+password = 1234  
+balance = 1000  
 
-b. deposit 
-enter the amount to deposit
-- user input 
-100
+b. deposit   
+enter the amount to deposit   
+- user input   
+100  
 
-c. withdraw
-enter the amount to deposit
-- user input 
-300
+c. withdraw   
+enter the amount to deposit   
+- user input    
+300   
 
 
-B. Admin 
-- user input 
-name = "admin"
-password = "1234"
+B. Admin   
+- user input   
+name = "admin"  
+password = "1234"  
 
-To view all of the users, 
-menu = 1
+To view all of the users,   
+menu = 1  
