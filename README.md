@@ -132,6 +132,7 @@ amount = 100
 
 
 B. Admin   
+a. admin login success case
 ```
 9
 <Admin Page>
@@ -157,6 +158,18 @@ Enter Menu:
 1
 Name:test
 Total:500
+```
+
+b. admin login fail case
+
+```
+9
+<Admin Page>
+ADMIN USER ID:
+admin
+ADMIN PASSWORD:
+1111
+Wrong ID or PASSWORD!
 ```
 
 C.Exit
