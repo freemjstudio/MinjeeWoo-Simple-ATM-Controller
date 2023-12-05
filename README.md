@@ -1,6 +1,13 @@
 # MinjeeWoo-Simple-ATM-Controller
 Simple ATM Controller
 
+## How to Start
+- Make sure that you have C++ compiler on your environment. 
+- Clone the remote repository. 
+
+```
+git clone https://github.com/freemjstudio/MinjeeWoo-Simple-ATM-Controller.git
+```
 
 ## MacOS
 
