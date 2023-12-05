@@ -1,0 +1,2 @@
+
+            newFile.write((char*)&acc
