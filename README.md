@@ -73,7 +73,7 @@ You can quit the ATM Service. Thank you for using our service.
 - You can create test user following the test case below. 
 
 A. User
-a. create a new user 
+- create a new user 
 ```
 1
 <Create Account>
@@ -84,8 +84,7 @@ Enter initial balance:
 500
 ```
 
-
-- user input  
+[user input]
 name = "test"  
 password = 1234  
 balance = 500  
@@ -106,7 +105,7 @@ Enter the amount to deposit:
 Total:15000
 ```
 
-- user input   
+[user input]
 menu = 2
 name = "bear"
 password = 1234
@@ -128,8 +127,13 @@ Enter the amount to withdraw:
 1000
 Not Enough Money!
 ```
+[user input]    
+menu = 3  
+name = "test"
+password = 1234
+amount = 1000   
 
-- withdraw succeeded test case: 
+- withdraw success test case: 
 ```
 3
 
@@ -143,7 +147,7 @@ Enter the amount to withdraw:
 100
 Total:500
 ```
-- user input    
+[user input]    
 menu = 3  
 name = "test"
 password = 1234
@@ -162,7 +166,7 @@ ADMIN PASSWORD:
 Welcome to Admin Page!
 Login Successfully!
 ```
-- user input   
+[user input]
 menu = 9  
 name = "admin"  
 password = "1234"  
@@ -190,6 +194,9 @@ ADMIN PASSWORD:
 1111
 Wrong ID or PASSWORD!
 ```
+[user input]
+user id : "admin"
+password : "1111"
 
 E. Exit
 ```
