@@ -84,10 +84,10 @@ Enter initial balance:
 500
 ```
 
-[user input]
-name = "test"  
-password = 1234  
-balance = 500  
+[user input]  
+name = "test"   
+password = 1234    
+balance = 500    
 
 B. deposit   
 enter the amount to deposit   
@@ -105,11 +105,11 @@ Enter the amount to deposit:
 Total:15000
 ```
 
-[user input]
-menu = 2
-name = "bear"
-password = 1234
-amount = 5000  
+[user input]   
+menu = 2   
+name = "bear"   
+password = 1234   
+amount = 5000     
 
 C. withdraw 
 
@@ -129,9 +129,9 @@ Not Enough Money!
 ```
 [user input]    
 menu = 3  
-name = "test"
-password = 1234
-amount = 1000   
+name = "test"   
+password = 1234   
+amount = 1000      
 
 - withdraw success test case: 
 ```
@@ -149,9 +149,9 @@ Total:500
 ```
 [user input]    
 menu = 3  
-name = "test"
-password = 1234
-amount = 100   
+name = "test"   
+password = 1234   
+amount = 100      
 
 
 D. Admin   
@@ -194,7 +194,7 @@ ADMIN PASSWORD:
 1111
 Wrong ID or PASSWORD!
 ```
-[user input]
+[user input]  
 user id : "admin"
 password : "1111"
 
@@ -210,5 +210,5 @@ Welcome to ATM Service!
 Thank You for using our ATM Service!
 ```
 
-- user input
+[user input]    
 menu = 0
