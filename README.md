@@ -90,33 +90,49 @@ name = "test"
 password = 1234  
 balance = 500  
 
-b. deposit   
+B. deposit   
 enter the amount to deposit   
 
 ```
 2
 <Deposit>
 Enter Name:
-test
+bear
 Enter Password:
 1234
-Welcome ,test
+Login Succeeded!
 Enter the amount to deposit:
-100
-Total:600
+5000
+Total:15000
 ```
 
 - user input   
 menu = 2
-name = "test"
+name = "bear"
 password = 1234
-amount = 100  
+amount = 5000  
 
-c. withdraw   
+C. withdraw 
 
+- withdraw fail test case : 
 
 ```
 3
+<Withdraw>
+Enter Name:
+test
+Enter Password:
+1234
+Login Succeeded!
+Enter the amount to withdraw:
+1000
+Not Enough Money!
+```
+
+- withdraw succeeded test case: 
+```
+3
+
 <Withdraw>
 Enter Name:
 test
@@ -134,8 +150,8 @@ password = 1234
 amount = 100   
 
 
-B. Admin   
-a. admin login success case
+D. Admin   
+- admin login success case
 ```
 9
 <Admin Page>
@@ -163,7 +179,7 @@ Name:test
 Total:500
 ```
 
-b. admin login fail case
+- admin login fail case
 
 ```
 9
@@ -175,7 +191,7 @@ ADMIN PASSWORD:
 Wrong ID or PASSWORD!
 ```
 
-C.Exit
+E. Exit
 ```
 Welcome to ATM Service!
         1. Create Account 

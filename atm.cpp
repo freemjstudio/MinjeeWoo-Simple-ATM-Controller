@@ -198,7 +198,7 @@ void Account::withdrawal(char* userName, int userPW){
             cout << "Enter the amount to withdraw:\n";
             cin >> amount;
             if (account.balance < amount) {
-                cout << "Not Enough Money!";
+                cout << "Not Enough Money!\n";
             } else {
                 account.balance -= amount; // update the value 
                 cout << "Total:" << account.balance << endl;
