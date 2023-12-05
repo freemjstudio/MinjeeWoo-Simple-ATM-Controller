@@ -66,16 +66,19 @@ balance = 1000
 b. deposit   
 enter the amount to deposit   
 - user input   
-100  
+menu = 2
+amount = 100  
 
 c. withdraw   
 enter the amount to deposit   
 - user input    
-300   
+menu = 3  
+amount = 300   
 
 
 B. Admin   
 - user input   
+menu = 9  
 name = "admin"  
 password = "1234"  
 
