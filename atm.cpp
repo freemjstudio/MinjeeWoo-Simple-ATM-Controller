@@ -265,6 +265,8 @@ void atmService() {
         cout << "<Admin Page>\n";
         if (admin.adminLogin()) {
             cout << "Login Successfully!\n";
+        } else {
+            break;
         };
         admin.adminService();
         cout << "Enter Menu: \n";
