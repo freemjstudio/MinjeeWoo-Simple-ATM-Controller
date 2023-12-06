@@ -33,6 +33,18 @@ git clone https://github.com/freemjstudio/MinjeeWoo-Simple-ATM-Controller.git
 cd "/YourDirectory/MinjeeWoo-Simple-ATM-Controller/" && g++ -std=c++14 atm.cpp -o atm && "/YourDirectory/MinjeeWoo-Simple-ATM-Controller/"atm
 ```
 
+## Linux 
+```
+# move to directory 
+cd /YourDirectory/MinjeeWoo-Simple-ATM-Controller/
+
+# compile the c++ file with g++ 
+g++ -std=c++14 atm.cpp -o atm
+
+# run the execution file
+./atm 
+```
+
 ## Welcome to ATM Service!
 
 Enter the number that you want to run. 
